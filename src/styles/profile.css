@@ -122,7 +122,7 @@ body {
 
 .repos-card:hover {
 
-    border: 2px solid var(--color-grey-6);
+    border: 2px solid var(--color-grey-5);
     background-color: var(--color-grey-1);
 }
 
@@ -173,7 +173,7 @@ body {
     line-height: 1.0625rem;
     cursor: pointer;
     text-decoration: none;
-    color: var(--color-grey-7);
+    color: var(--color-grey-6);
 }
 
 .link-repos:hover {
