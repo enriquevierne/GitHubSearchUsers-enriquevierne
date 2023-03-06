@@ -1,0 +1,219 @@
+body {
+
+    background-color: var(--color-grey-2);
+}
+
+.container {
+
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-primary);
+    color: var(--color-grey-7);
+    background-color: var(--color-grey-2);
+    list-style: none;
+}
+
+.content-container {
+
+    width: 90%;
+    max-width: 784px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+
+.content-profile {
+
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info {
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.profile-info img {
+
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--color-brand-2);
+    border-radius: 50px;
+}
+
+.profile-info h2 {
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+.profile-btn {
+
+    width: 169px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    color: var(--color-grey-7);
+    font-size: .875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .25s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.profile-btn:hover {
+
+    background-color: var(--color-grey-4);
+
+}
+
+.container-repos {
+
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.repos-list {
+
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    gap: .875rem;
+
+}
+
+::-webkit-scrollbar {
+
+    width: 1px;
+    background-color: transparent;
+
+}
+
+
+.repos-card {
+
+    width: 90%;
+    max-width: 381px;
+    height: 243px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 30px 20px;
+    transition: .3s;
+
+}
+
+.repos-card:hover {
+
+    border: 2px solid var(--color-grey-7);
+    background-color: var(--color-grey-1);
+}
+
+.title-repo {
+
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+
+}
+
+.text-repo {
+
+    height: 100px;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.3125rem;
+    color: rgba(255, 255, 255, 0.6);
+    overflow: auto;
+    text-overflow: ellipsis;
+
+}
+
+.interations-repos {
+
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.link-repos {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 8px;
+    gap: 10px;
+    width: 93px;
+    height: 28px;
+    background: transparent;
+    border: 1px solid var(--color-grey-7);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.0625rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-grey-7);
+}
+
+.link-repos:hover {
+
+    background: var(--color-brand-2);
+    border: 1px solid var(--color-brand-2);
+
+}
+
+.count-star {
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+    width: 60px;
+    height: 30px;
+
+}
+
+.stargray {
+
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+       
+}
+.staryellow {
+
+    background-image: url(../assets/img/starred.png);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.total-star{
+
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.0625rem;
+    height: 16px;
+
+}
+
