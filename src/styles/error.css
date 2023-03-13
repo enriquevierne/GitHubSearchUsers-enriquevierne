@@ -4,7 +4,9 @@
     height: 100vh;
     background-color: var(--color-grey-2);
     display: flex;
-    justify-content: space-around;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -14,7 +16,9 @@
     flex-direction: column;
     justify-content: center;
     gap: 15px;
-    width: 342px;
+    width: 80%;
+    max-width: 350px;
+    text-align: center;
 
 }
 
@@ -40,7 +44,8 @@
 
 .alert-message a {
 
-    width: 342px;
+    width: 80%;
+    max-width: 342px;
     height: 60px;
     background: var(--color-brand-2);
     border: 2px solid var(--color-brand-2);
@@ -52,13 +57,14 @@
     font-weight: 600;
     font-size: 1.125rem;
     color: var(--color-grey-7);
+    align-self: center;
 
 }
 
 .alert-image {
 
-    height: 377px;
-    width: 421px;
+    height: 220px;
+    width: 220px;
     position: relative;
 
 }
@@ -66,8 +72,8 @@
 .red-block {
 
     position: absolute;
-    width: 25rem;
-    height: 21.875rem;
+    width: 200px;
+    height: 200px;
     left: 0px;
     top: 0px;
     background: var(--color-brand-2);
@@ -77,16 +83,89 @@
     align-items: center;
 }
 
-.red-block img {}
-
 .purple-block {
 
     position: absolute;
-    width: 25rem;
-    height: 21.875rem;
+    width: 200px;
+    height: 200px;
     right: 0px;
     bottom: 0px;
     background: #520F84;
     border-radius: 5px;
+
+}
+
+@media(min-width: 1024px) {
+
+    .alert-image {
+
+        height: 440px;
+        width: 440px;
+
+    }
+
+    .red-block {
+
+        width: 400px;
+        height: 400px;
+
+    }
+
+    .purple-block {
+
+        width: 400px;
+        height: 400px;
+
+
+    }
+
+}
+
+@media(min-width: 1440px) {
+
+    .container {
+
+        justify-content: space-around;
+        flex-direction: row-reverse;
+
+    }
+
+
+}
+
+@media(min-width: 1920px) {
+
+    .alert-message {
+
+        width: 100%;
+        
+    
+    }
+    
+    .alert-message h1 {
+        
+        font-size: 3.375rem;
+        line-height: 3.125rem;
+        
+    }
+    
+    .alert-message p {
+        
+        font-size: 1.5rem;
+        line-height: 2rem;
+        
+    }
+    
+    .alert-message p strong {
+        
+        font-size: 1.6rem;
+        line-height: 1.5rem;
+    }
+    
+    .alert-message a {
+    
+        font-size: 1.625rem;
+        
+    }
 
 }

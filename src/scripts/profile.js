@@ -6,7 +6,6 @@ function renderProfile() {
     const user = JSON.parse(data)
     const container = document.querySelector('.content-profile')
 
-
     const infoUser = document.createElement('div')
     const avatarUser = document.createElement('img')
     const nameUser = document.createElement('h2')
@@ -99,7 +98,6 @@ function countRepos(){
 
     const data = localStorage.getItem('user')
     const user = JSON.parse(data)
-    console.log("-> ~ user", user)
     const totalRepos = document.querySelector('.total-repos')
 
     if(user.public_repos === 0){
